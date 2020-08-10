@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.mobile.base.Base;
-
+// just for git
 public class DemoTest extends Base {
 	@Test
 	   public  void doLogin() throws IOException, InterruptedException {
@@ -25,7 +25,7 @@ public class DemoTest extends Base {
 	   
 	}
 	
-	//@AfterTest
+	@AfterTest
 	public void closeEmulator() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("adb kill-server");
 		Thread.sleep(35000);
