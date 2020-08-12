@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ajeet.testcases.DemoTest">
+      <class name="com.blogs.mobileApp">
         <methods>
-          <include name="doLogin"/>
-          <include name="killAllNodes"/>
+          <include name="doTesting"/>
+          <include name="startApp"/>
         </methods>
-      </class> <!-- com.ajeet.testcases.DemoTest -->
+      </class> <!-- com.blogs.mobileApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,7 +28,7 @@ public class Base {
 	}
 
 	public static AndroidDriver<AndroidElement> openApp() throws IOException, InterruptedException {
-		deviceName = "real1";
+		deviceName = "real";
 
 		startService();
 		File file = new File("Z:\\Testing Material\\Andriod apps\\app-debug.apk");
@@ -75,7 +75,8 @@ public class Base {
 	}
 
 	public static void startEmulator() throws IOException, InterruptedException {
-		closeService();
+		
+	//	closeService();
 		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\startEmulator.bat");
 		Thread.sleep(55500);
 	}
